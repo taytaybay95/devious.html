@@ -1,16 +1,57 @@
-
-
-
-
-
-
-
-
-head {
+header {
 	background-color: blue;
-
 	padding: 40px 20px 40px 20px; 
 }
+
+/*DROPDOWN BUTTON*/
+.dropbin {
+    background-color: black;
+    color:white;
+    padding: 32px 16px;
+    border-radius: 12px;
+    font-size: 10px;
+    border: none;
+    cursor:pointer;
+}
+
+/*DROPDOWN BUTTON ON HOVER & FOCUS */
+.dropbtn:hover, .dropbtn:focus{
+    background-color: #2980B9
+}
+
+/* THE CONTAINER <DIV> - NEED TO POSITION THE DROP CONTENT */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* LINKS INSIDE THE DROPDOWN */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*CHANGE COLOR OF DROPDOWN LINKS ON HOVER */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* SHOW THE DROPDOWN MENU (USE JS TO ADD THIS CLASS TO THE 
+.DROPDOWN-CONTENT CONTAINER WHEN THE USER CLICKS ON THE 
+DROPDOWN BUTTON) */
+.show {display: block;}
+
+
 
 /*<title>Ms.Devious</title>*/
 	/*Ms.Devious*/
@@ -27,8 +68,7 @@ head {
 
 body {
 	padding:20px 20px 20px 20px;
-
-	background: pink;
-    }
+	/*background-image: url('img/art.jpg');
+    }*/
 
 </body>
